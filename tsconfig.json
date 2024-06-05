@@ -2,6 +2,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./src",
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,
@@ -18,6 +19,18 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
+    "paths": {
+      "@app/*": ["app/*"],
+      "@model": ["app/core/model"],
+      "@base": ["app/core/base"],
+      "@pages/*": ["app/pages/*"],
+      "@core/*": ["app/core/*"],
+      "@shared/*": ["app/shared/*"],
+      "@env": ["environments/environment"],
+      "@modules/*": ["app/modules/*"],
+      "@data/*": ["app/data/*"],
+      "@store/*": ["app/store/*"]
+    },
     "lib": [
       "ES2022",
       "dom"
